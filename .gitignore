@@ -1,0 +1,27 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+**/dist/
+**/build/
+**/.vite/
+**/coverage/
+
+# Environment files
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+**/*.log
+
+# Cache and temp files
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/tmp/
+
+# Editor / OS files
+**/.DS_Store
+**/.idea/
+**/.vscode/
