@@ -1,0 +1,42 @@
+const colorList = {
+    "grass": "linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%)",
+    "fire": "linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%)",
+    "water": "linear-gradient(180deg, #4592c4 50%, #4592c4 50%)",
+    "poison": "linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%)",
+    "electric": "linear-gradient(180deg, #eed535 50%, #eed535 50%)",
+    "flying": "linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%)",
+    "bug": "linear-gradient(180deg, #729f3f 50%, #729f3f 50%)",
+    "normal": "linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%)",
+    "ground": "linear-gradient(180deg, #f7de3f 50%, #ab9842 50%)",
+    "fairy": "linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%)",
+    "fighting": "linear-gradient(180deg, #d56723 50%, #d56723 50%)",
+    "psychic": "linear-gradient(180deg, #f366b9 50%, #f366b9 50%)",
+    "rock": "linear-gradient(180deg, #a38c21 50%, #a38c21 50%)",
+    "ghost": "linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%)",
+    "steel": "linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%)",
+    "ice": "linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%)",
+    "dragon": "linear-gradient(180deg, #53a4cf 50%, #f16e57 50%)",
+    "dark": "linear-gradient(180deg, #707070 50%, #707070 50%)"
+}
+
+const whiteTextList = [
+    "poison",
+    "fire",
+    "water",
+    "bug",
+    "rock",
+    "ghost",
+    "psyschic",
+    "dragon",
+    "dark"
+]
+
+const isMatchedBgColor = (type) => {
+    return colorList[type];
+}
+
+const getTextColor = (type) => {
+    return whiteTextList.includes(type) ? "white" : "black";
+}
+
+export { isMatchedBgColor, getTextColor }
